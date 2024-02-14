@@ -23,7 +23,7 @@ const githubData = {
     "events_url": "https://api.github.com/users/mojombo/events{/privacy}",
     "received_events_url": "https://api.github.com/users/mojombo/received_events",
     "type": "User",
-    "site_admin": false
+    // "site_admin": false
   }
 
 app.get('/', (req, res) => {
@@ -46,6 +46,6 @@ app.get('/youtube',(req, res)=>{
     res.send('<h2>Welcome to Youtube</h2>')
 })
 
-app.listen(process.env.port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${port}`)
 })
